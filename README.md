@@ -10,7 +10,8 @@ This repository holds software for an application that converts a trail of gpx p
 ### Errors, things to be Worked on 
 - Does not handle u-turns well
 - has minor road errors at certain intersections
-- slow runtime (up to 10-12 minutes due to API calls) 
+- slow runtime (up to 10-12 minutes due to API calls)
+- Improving ease of installation and use for users
 
 ## User Manual 
 

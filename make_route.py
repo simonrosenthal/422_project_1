@@ -6,7 +6,7 @@ The arithmetic for making the route
 
 """
 import math
-from gpx_route2 import Route
+from gpx_route import Route
 from find_turn import find_turn
 from file_handler import *
 

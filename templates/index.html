@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<div class="container" align="center">
+<div class="row">
+    <div class="col">
+        <p class="form-header">What's good? Try uploading a GPX file here please:</p>
+        <p> if you do not have your own api key, and are not able to get anything to download, please get a new api key from <a href="https://developer.mapquest.com/plans"> here </a></p>
+        <form enctype = "multipart/form-data" method = "post">
+            <label>gpx file: </label><input type = "file" name = "file" />
+            <br>
+            <label>api key: </label><input type = "text" name = "apikey" />
+            <br>
+            <input type="submit" value="Upload" class="btn btn-success" />
+        </form>
+    </div>
+</div>
+
+<div class="container" id="buttonAndOutput">
+    <!--convert button with loading bar? -->
+    <div class="row">
+        <div class="col">
+            <a class="btn btn-success" href="/convert_input/" download>convert gpx to route</a>
+        </div>
+    </div>
+
+    <!--ouput box-->
+    <div id="output">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <a class="btn btn-success" href="/return_result/" download>DOWNLOAD</a>
+    </div>
+</div>
+</div>
+{% endblock %}

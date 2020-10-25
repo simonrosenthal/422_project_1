@@ -11,6 +11,7 @@ from random import seed, randint
 from make_route import collectTurnPoints
 import webbrowser
 from file_handler import *
+#from pyfladesk import init_gui
 
 from werkzeug.utils import secure_filename
 
@@ -81,10 +82,10 @@ def return_result():
     return render_template('index.html')
 
 def start():
-    app.secret_key = os.urandom(24)
+    #app.secret_key = os.urandom(24)
     #app.config['SESSION_TYPE'] = 'filesystem'
     app.run(debug = True)
-
+    #init_gui(app)
 
 if (__name__ == "__main__"):
     webbrowser.open('http://localhost:5000')

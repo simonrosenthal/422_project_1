@@ -24,9 +24,15 @@ This repository holds software for an application that converts a trail of gpx p
 ### Starting the Application
 If your computer doesn't have Python 3 currently installed, go to https://www.python.org/downloads/ and install the most recent version for your operating system.
 To get started,
+
+TO BUILD SOFTWARE
 1. Download this repo
-2. Build then run app.py
-3. Open your web browser, type 127.0.0.1:5000 in the address bar, and then hit enter
+2. enable the virtual environment that comes with this repo by typing in the location of this repo 
+  ```
+  >>.\venv\Scripts\activate
+  >>pyinstaller --add-data "templates;templates" --add-data "static;static" --add-data "input;input" --add-data "output;output" --debug "all"  app.py
+  ```
+The second command builds the app, and the windows executable can be found in dist/app.exe relative to the base directory 
  
 ### Entering Information
 1. Once you're on the graphic interface, if you have a MapQuest API key, enter it into the textbox. If you leave this textbox empty and it doesn't work, click the link to be taken to the website to make a free account which will include a key.
